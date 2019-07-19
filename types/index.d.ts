@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { IconProps } from '@material-ui/core/Icon';
 import { string } from 'prop-types';
-import { resetServerContext as resetServerContextFn } from 'react-beautiful-dnd'
+import { resetServerContext } from 'react-beautiful-dnd'
 
-export { resetServerContext } from 'react-beautiful-dnd';
+export const resetDnDServerContext = resetServerContext;
 
 export interface MaterialTableProps {
   actions?: (Action | ((rowData: any) => Action))[];
