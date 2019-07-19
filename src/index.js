@@ -3,6 +3,7 @@ import { defaultProps } from './default-props';
 import { propTypes } from './prop-types';
 import MaterialTable from './material-table';
 import { withStyles } from '@material-ui/core';
+export { resetServerContext } from 'react-beautiful-dnd';
 
 MaterialTable.defaultProps = defaultProps;
 MaterialTable.propTypes = propTypes;
@@ -23,6 +24,6 @@ const styles = theme => ({
   }
 });
 
-export { resetServerContext } from 'react-beautiful-dnd';
+export const resetDnDServerContext = resetServerContext;
 export default withStyles(styles, { withTheme: true })(props => <MaterialTable {...props} ref={props.tableRef} />);
 export * from './components';
