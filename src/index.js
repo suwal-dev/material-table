@@ -23,6 +23,6 @@ const styles = theme => ({
   }
 });
 
-
+export { resetServerContext } from 'react-beautiful-dnd';
 export default withStyles(styles, { withTheme: true })(props => <MaterialTable {...props} ref={props.tableRef} />);
 export * from './components';
