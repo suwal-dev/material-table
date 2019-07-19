@@ -1,20 +1,15 @@
 "use strict";
 
+var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");
+
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var _exportNames = {
-  resetDnDServerContext: true,
-  resetServerContext: true
+  resetDnDServerContext: true
 };
-Object.defineProperty(exports, "resetServerContext", {
-  enumerable: true,
-  get: function get() {
-    return _reactBeautifulDnd.resetServerContext;
-  }
-});
 exports["default"] = exports.resetDnDServerContext = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/extends"));
@@ -29,7 +24,7 @@ var _materialTable = _interopRequireDefault(require("./material-table"));
 
 var _core = require("@material-ui/core");
 
-var _reactBeautifulDnd = require("react-beautiful-dnd");
+var ReactBdnd = _interopRequireWildcard(require("react-beautiful-dnd"));
 
 var _components = require("./components");
 
@@ -64,7 +59,7 @@ var styles = function styles(theme) {
   };
 };
 
-var resetDnDServerContext = resetServerContext;
+var resetDnDServerContext = ReactBdnd.resetServerContext;
 exports.resetDnDServerContext = resetDnDServerContext;
 
 var _default = (0, _core.withStyles)(styles, {
